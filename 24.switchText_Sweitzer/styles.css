@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.full-screen-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-box {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(139, 69, 19, 0.6); /* Semi-transparent wooden color background */
+    padding: 20px 0;
+}
+
+.text-box p {
+    font-size: 2rem;
+    font-family: 'Rock Salt', cursive; /* Example of a wooden-looking font */
+    color: #fff; /* White text for better readability */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
