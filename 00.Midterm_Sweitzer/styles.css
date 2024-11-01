@@ -1,0 +1,51 @@
+/* Reset margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling for full viewport background */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-x: hidden;
+  background-size: contain; /* Fit the entire image within the viewport */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #000; /* Fallback background color */
+  transition: background-image 0.5s ease-in-out; /* Smooth transition for changing background */
+}
+
+/* Content container height to enable scrolling */
+.content {
+  height: 1200vh; /* Sufficient height for scrolling through all text boxes */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling for each text box */
+.text-box {
+  height: 100vh; /* Full viewport height for each text box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  padding: 20px;
+  width: 100%; /* Make each text box span full width */
+}
+
+/* Styling paragraph inside each text box with a background */
+.text-box p {
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.7); /* Opaque background behind text */
+  padding: 20px;
+  border-radius: 10px;
+  line-height: 1.5;
+}
